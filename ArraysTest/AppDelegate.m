@@ -23,10 +23,18 @@
     
     
     NSArray* array = [[NSArray alloc] initWithObjects:@"string 1", @"string 2", @"string 3", nil];
+    
+    /*
+    for (int i = 0; i < [array count]; i++) {
+        NSLog(@"%@", [array objectAtIndex:i]);
+        NSLog(@"i = %d", i);
+    }
+    
     for (int i = [array count] - 1; i >= 0; i--) {
         NSLog(@"%@", [array objectAtIndex:i]);
         NSLog(@"i = %d", i);
     }
+    */
 
     
     return YES;

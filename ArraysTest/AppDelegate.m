@@ -22,7 +22,9 @@
     [self.window makeKeyAndVisible];
     
     
-    NSArray* array = [[NSArray alloc] initWithObjects:@"string 1", @"string 2", @"string 3", nil];
+    //NSArray* array = [[NSArray alloc] initWithObjects:@"string 1", @"string 2", @"string 3", nil];
+    
+    NSArray
     
     /*
     for (int i = 0; i < [array count]; i++) {
@@ -35,6 +37,11 @@
         NSLog(@"i = %d", i);
     }
     */
+    
+    for (NSString* string in array) {
+        NSLog(@"%@", string);
+        NSLog(@"index = %d", [array indexOfObject:string]);
+    }
 
     
     return YES;

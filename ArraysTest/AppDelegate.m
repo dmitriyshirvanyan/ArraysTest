@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ASObject.h"
 
 @interface AppDelegate ()
 
@@ -22,9 +23,11 @@
     [self.window makeKeyAndVisible];
     
     
-    //NSArray* array = [[NSArray alloc] initWithObjects:@"string 1", @"string 2", @"string 3", nil];
+    //NSArray* array = [[NSArray alloc]initWithObjects:@"string 1",@"string 2",@"string 3", nil];
     
-    NSArray
+    //NSArray* array = [NSArray arrayWithObjects:@"string 1", @"string 2", @"string 3", nil];
+    
+    //NSArray* array = @[@"string 1", @"string 2", @"string 3"];
     
     /*
     for (int i = 0; i < [array count]; i++) {
@@ -38,11 +41,27 @@
     }
     */
     
+
+    /*
     for (NSString* string in array) {
         NSLog(@"%@", string);
-        NSLog(@"index = %d", [array indexOfObject:string]);
+        NSLog(@"index = %d",[array indexOfObject:string]);
     }
+     */
+    
+    ASObject* obj1 = [[ASObject alloc] init];
+    ASObject* obj2 = [[ASObject alloc] init];
+    ASObject* obj3 = [[ASObject alloc] init];
+    
+    obj1.name = @"Object 1";
+    obj2.name = @"Object 2";
+    [obj3 setName:@"Object 3"];
 
+    NSArray* array = [NSArray arrayWithObjects:obj1, obj2, obj3, nil];
+    
+    for (ASObject* obj in array) {
+        NSLog(@"name = %@", obj.name);
+    }
     
     return YES;
 }

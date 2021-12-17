@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65A3942C276CBDD300942441 /* ASObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3942B276CBDD300942441 /* ASObject.m */; };
 		65D929982769FDE700BC6D48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D929972769FDE700BC6D48 /* AppDelegate.m */; };
 		65D9299A2769FDE700BC6D48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D929992769FDE700BC6D48 /* ContentView.swift */; };
 		65D9299C2769FDE700BC6D48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65D9299B2769FDE700BC6D48 /* Assets.xcassets */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65A3942A276CBDD300942441 /* ASObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASObject.h; sourceTree = "<group>"; };
+		65A3942B276CBDD300942441 /* ASObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASObject.m; sourceTree = "<group>"; };
 		65D929932769FDE700BC6D48 /* ArraysTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArraysTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D929962769FDE700BC6D48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		65D929972769FDE700BC6D48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +57,8 @@
 		65D929952769FDE700BC6D48 /* ArraysTest */ = {
 			isa = PBXGroup;
 			children = (
+				65A3942A276CBDD300942441 /* ASObject.h */,
+				65A3942B276CBDD300942441 /* ASObject.m */,
 				65D929962769FDE700BC6D48 /* AppDelegate.h */,
 				65D929972769FDE700BC6D48 /* AppDelegate.m */,
 				65D929992769FDE700BC6D48 /* ContentView.swift */,
@@ -134,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A3942C276CBDD300942441 /* ASObject.m in Sources */,
 				65D9299A2769FDE700BC6D48 /* ContentView.swift in Sources */,
 				65D929A12769FDE700BC6D48 /* main.m in Sources */,
 				65D929982769FDE700BC6D48 /* AppDelegate.m in Sources */,

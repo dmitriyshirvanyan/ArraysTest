@@ -7,6 +7,7 @@
 
 #import "AppDelegate.h"
 #import "ASObject.h"
+#import "ASChild.h"
 
 @interface AppDelegate ()
 
@@ -51,18 +52,28 @@
     
     ASObject* obj1 = [[ASObject alloc] init];
     ASObject* obj2 = [[ASObject alloc] init];
-    ASObject* obj3 = [[ASObject alloc] init];
+    ASChild* obj3 = [[ASChild alloc] init];
     
     obj1.name = @"Object 1";
     obj2.name = @"Object 2";
     [obj3 setName:@"Object 3"];
-
-    NSArray* array = [NSArray arrayWithObjects:obj1, obj2, obj3, nil];
+    
+    obj3.lastName = @"Last Name";
+  
+    NSArray* array = [NSArray arrayWithObjects:obj3, obj2, obj1, nil];
     
     for (ASObject* obj in array) {
         NSLog(@"name = %@", obj.name);
-    }
-    
+        [obj action];
+        
+        if ([obj isKindOfClass:[ASChild class]]) {
+            
+            ASChild* child = (ASChild*)obj;
+            
+            NSLog(@"last name = %@", child.lastName);
+        }
+    } 
+     
     return YES;
 }
 

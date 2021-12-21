@@ -7,10 +7,10 @@
 
 #import "ASObject.h"
 
-@implementation ASObject
+@implementation ASObject 
 
 - (void) action {
-    NSLog(@"ACTION!!!");
+    NSLog(@"%@ ACTION!!!", self.name); 
 }
 
 @end
